@@ -15,9 +15,9 @@ session_start();
 		<div class="unix-gif"></div>
 		<div class="unix-imagen"></div>
 	</div>
-	<div class="grid">
+	<div class="grid unix">
 		<form action="" method="POST" class="form login">
-			<div class="form__field">
+			<div class="form__field santuario">
 				<label for="login__username">
 					<svg class="icon">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
@@ -40,9 +40,11 @@ session_start();
 			</div>
 		</form>		
 		<p class="text--center">Copyright © Unix Server</p>
+		<p class="text--center" style="position: fixed;left: 50%;justify-content: center;display: grid;right: 50%; top:550px" id="date"></p>
 		<center>
 			<p class="t3" id="m"></p>
 		</center>
+
 	</div>	
 	<svg xmlns="http://www.w3.org/2000/svg" class="icons">
 	  	<symbol id="arrow-right" viewBox="0 0 1792 1792">
@@ -58,17 +60,9 @@ session_start();
 </body>
 </html>
 
-<!--------- Scripts ----------->
-<script>
-	function mensaje(){
-		document.getElementById('m').innerHTML = '';	
-	}
-
-	function error(){
-		document.getElementById('m').innerHTML = 'Usuario y/o contraseña incorrecta.';
-	}
-</script>
-<!--------- Fin Scripts ----------->
+<!--------- Repara los Bugs ----------->
+<script src="nucleo.js"></script>
+<!--------- Fin  ----------->
 
 <?php
 
